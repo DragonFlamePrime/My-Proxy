@@ -18,10 +18,25 @@ app.get("/", (req, res) => {
           MDN Docs
         </button>
 
+        <button onclick="location.href='/fetch?url=https://www.curseforge.com'">
+          CurseForge
+        </button>
+
+        <button onclick="location.href='/fetch?url=https://modrinth.com'">
+          Modrinth
+        </button>
+
         <button onclick="location.href='/fetch?url=https://wikipedia.org'">
           Wikipedia
         </button>
 
+        <button onclick="location.href='/fetch?url=https://canary.discord.com'">
+          Discord
+        </button>
+
+<button onclick="location.href='/fetch?url=https://canary.discord.com/login'">
+          Discord Login
+        </button>
 
       </body>
     </html>
@@ -273,7 +288,10 @@ app.get("/fetch", async (req, res) => {
     "https://mdn.mozillademos.org",
     "https://mdn.github.io",
     "https://wikipedia.org",
-  
+    "https://www.curseforge.com",
+    "https://modrinth.com",
+    "https://canary.discord.com",
+
     // Bluesky
     "https://bsky.app",
     "https://cdn.bsky.app",
